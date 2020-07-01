@@ -35,7 +35,7 @@ $(document).ready(function(){
           query: queryRicerca,
           language:"it-IT"   // <== lingua
         },
-        success: function generaListaFilm(data){
+        success: function(data){
 
           // handlebars setup
           var source = $("#film-template").html();
