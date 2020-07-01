@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- handlebars -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.js"></script>
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Moment js -->
+  <script src="https://momentjs.com/downloads/moment.js"></script>
+  <title>Boolflix</title>
+</head>
+
+<body>
+  <!-- INPUT RICERCA FILM -->
+  <label for="">Cerca un film</label>
+  <input id="ricerca-film" type="text" value="" placeholder="scrivi qui...">
+  <button id="btn-ricerca" type="button" name="button">Ricerca</button>
+  <!-- FINE INPUT RICERCA FILM -->
+
+  <!-- LISTA FILM RICERCA -->
+  <ul id="stampa-ricerca">
+
+  </ul>
+
+  <!-- FINE LISTA FILM RICERCA-->
+
+
+  <!-- HANDLEBARS TEMPLATE -->
+
+  <script id="film-template" type="text/x-handlebars-template">
+
+    <li>{{ title }}</li>
+    <li>{{ original_title }}</li>
+    <li>{{ original_language }}</li>
+    <li>{{ vote_average }}</li>
+
+  </script>
+
+  <!-- FINE HANDLEBARS TEMPLATE -->
+
+
+
+
+
+
+
+  <!-- Javascript -->
+  <script src="script.js"></script>
+</body>
+
+</html>
