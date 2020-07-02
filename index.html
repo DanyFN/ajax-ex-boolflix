@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <!-- handlebars -->
@@ -34,10 +35,10 @@
 
   <script id="film-template" type="text/x-handlebars-template">
 
-    <li class="titolo">TITOLO: {{ title }}</li>
-    <li class="titolo_originale">TITOLO ORIGINALE: {{ original_title }}</li>
-    <li class="lingua_originale">LINGUA ORIGINALE: {{ original_language }}</li>
-    <li class="rating">RATING: {{ vote_average }}</li>
+    <li class="titolo"> TITOLO:<h3> {{ title }}{{ name }}</h3></li>
+    <li class="titolo_originale">TITOLO ORIGINALE: {{ original_title }}{{ original_name}}</li>
+    <li class="lingua_originale">LINGUA ORIGINALE: {{{ original_language }}}</li>
+    <li class="rating">RATING: {{{ vote_average }}}</li>
     <br>
 
   </script>
