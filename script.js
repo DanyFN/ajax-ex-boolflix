@@ -76,6 +76,8 @@ function generaFilm(arrayRicerca){
     var linguaOriginale = filmSingolo.original_language;
     var rating = filmSingolo.vote_average;
     var titoloSerieTv = filmSingolo.name;
+    var copertinaFilm =  filmSingolo.poster_path;
+    var descrizioneFilm = filmSingolo.overview;
     var titoloOriginale_SerieTv = filmSingolo.original_name;
     var arrotondaNum = arrotondaNumero(rating);
     var html_stelline = stelline(arrotondaNum);
@@ -87,7 +89,9 @@ function generaFilm(arrayRicerca){
       original_language: creaLingua(linguaOriginale),
       vote_average: html_stelline,
       name: titoloSerieTv,
-      original_name: titoloOriginale_SerieTv
+      original_name: titoloOriginale_SerieTv,
+      poster_path: '<img src="https://image.tmdb.org/t/p/w342' + copertinaFilm + '">',
+      overview: descrizioneFilm
     };
     var html = template(context);
 
@@ -156,7 +160,7 @@ function stampaSerie(ricercaSerie){
   });
 };
 
-// FUNZIONE CREA BANDIERE 
+// FUNZIONE CREA BANDIERE
 function creaLingua(linguaOriginale) {
 
   var bandiere = ['es', 'it','de','en','fr'];
