@@ -6,41 +6,31 @@
   box-sizing: border-box;
 }
 body{
-  background-color: rgb(223, 223, 223);
-}
-label{
-  color: red;
-  font-size: 25px;
-  font-weight: bold;
+  background-color: rgb(18, 18, 18);
 }
 li{
   list-style-type: none;
 }
-
 /* poster */
 img{
   height: 100%;
   width: 100%;
 }
-
 .nav-left img{
   height: 60px;
 }
-
 /* fine regole generali */
 #ricerca-film{
-  height: 20px;
-  border-radius: 1%;
-  padding-left: 2px;
+  height: 30px;
+  padding-left: 5px;
+  outline: none;
 }
 /* poster */
-
 .poster{
   height: 100%;
   width: 100%;
   /* display: none; */
 }
-
 /* bandiera */
 .lingua_originale img{
   height: 15px;
@@ -55,10 +45,12 @@ img{
 
 /* navbar */
 .navbar{
-  background-color: black;
+  background-color: rgb(18, 18, 18);
   height: 100px;
   width: 100%;
   display: flex;
+  border: 1px solid red;
+  margin-bottom: 25px;
 }
 .nav-left{
   margin-left: 5%;
@@ -91,6 +83,16 @@ img{
   width: 342px;
   text-align: center;
   margin: 10px 43px;
+  cursor: pointer;
+  /* border: 1px solid red; */
+  /* box-shadow: 5px 10px 18px rgb(221, 221, 221); */
+}
+
+
+.card:hover{
+transform: scale(1.2);
+/* box-shadow: 5px 10px 18px #888888; */
+transition: 1s;
 }
 .descrizione-film{
   height: 100%;

@@ -21,9 +21,9 @@ $(document).ready(function(){
 
   // MOUSE LEAVE/ENTER SU DESCRIZIONE film
 
-  $(document).on("mouseenter",".card",function(){
-    $(this).children(".descrizione-film").show();
-    $(this).children(".poster").hide();
+  $(document).on("click",".card",function(){
+    $(this).children(".descrizione-film").toggle();
+    $(this).children(".poster").toggle();
   });
 
   $(document).on("mouseleave",".card",function(){
