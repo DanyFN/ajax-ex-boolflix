@@ -1,9 +1,10 @@
+/*regole generali  */
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 body{
   background-color: rgb(223, 223, 223);
 }
@@ -12,9 +13,38 @@ label{
   font-size: 25px;
   font-weight: bold;
 }
-
 li{
   list-style-type: none;
+}
+
+/* poster */
+img{
+  height: 100%;
+  width: 100%;
+}
+
+.nav-left img{
+  height: 60px;
+}
+
+/* fine regole generali */
+#ricerca-film{
+  height: 20px;
+  border-radius: 1%;
+  padding-left: 2px;
+}
+/* poster */
+
+.poster{
+  height: 100%;
+  width: 100%;
+  /* display: none; */
+}
+
+/* bandiera */
+.lingua_originale img{
+  height: 15px;
+  width: 25px;
 }
 
 .container{
@@ -46,20 +76,37 @@ li{
 }
 /* fine navbar */
 
-/* CARD */
-#stampa-ricerca{
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
 
-  /* flex-basis: calc(100% / 4); */
+#stampa-ricerca{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
 }
+
+/* CARD */
 .card{
+  height: 440px;
   width: 342px;
-  height:503px;
+  text-align: center;
+  margin: 10px 43px;
+}
+.descrizione-film{
+  height: 100%;
   overflow: auto;
-  border: 1px solid brown;
-  margin: 50px 1px;
+  padding: 10px 10px;
+  background-color: rgb(11, 11, 11);
+  color: white;
+  display: none;
+}
+.descrizione-film h3{
+  padding-bottom: 8px;
+  color: red;
+}
+.descrizione-film li {
+  padding-bottom: 6px;
+}
+.descrizione-film .rating i{
+  color: rgb(238, 224, 89);
 }

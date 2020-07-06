@@ -17,45 +17,51 @@
 </head>
 
 <body>
-    <div class="navbar">
-      <nav class="nav-left">
-        <div>
-          <label for="">BOOLFLIX</label>
-        </div>
-      </nav>
-
-      <nav class="nav-right">
-        <div>
-          <input id="ricerca-film" type="text" value="" placeholder="scrivi qui...">
-          <button id="btn-ricerca" type="button" name="button">Ricerca</button>
-        </div>
-      </nav>
-    </div>
-
-    <div class="container">
-      <div id="stampa-ricerca">
-
-
-
+  <div class="navbar">
+    <nav class="nav-left">
+      <div>
+        <img src="img/icona.png" alt="">
       </div>
-    </div>
+    </nav>
+
+    <nav class="nav-right">
+      <div>
+        <input id="ricerca-film" type="text" value="" placeholder="scrivi qui...">
+        <!-- <button id="btn-ricerca" type="button" name="button">Ricerca</button> -->
+      </div>
+    </nav>
+  </div>
+
+  <div id="stampa-ricerca">
+
+
+
+
+  </div>
 
   <script id="film-template" type="text/x-handlebars-template">
-      <div class="card">
-        <!-- LISTA FILM RICERCA -->
+    <div class="card">
+      <!-- LISTA FILM RICERCA -->
+      <div class="poster">
 
+        {{{ poster_path }}}
 
+      </div>
+
+      <div class="descrizione-film">
+        <!-- titolo film -->
+        <h3> {{ title }}{{ name }}</h3>
+        <!-- descrizione film -->
         <ul>
-          <li class="titolo"> TITOLO:<h3> {{ title }}{{ name }}</h3></li>
           <li class="titolo_originale">TITOLO ORIGINALE: {{ original_title }}{{ original_name}}</li>
           <li class="lingua_originale">LINGUA ORIGINALE: {{{ original_language }}}</li>
           <li class="rating">RATING: {{{ vote_average }}}</li>
-          <li class="copertina"> {{{ poster_path }}}</li>
-          <!-- <li class="descrizioneFilm"> {{ overview }}</li> -->
+          <li class="descrizioneFilm"> <small>{{ overview }}</small></li>
         </ul>
-
-        <!-- FINE LISTA FILM RICERCA-->
       </div>
+
+      <!-- FINE LISTA FILM RICERCA-->
+    </div>
 
 
   </script>
